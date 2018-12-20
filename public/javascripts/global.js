@@ -63,6 +63,8 @@ function showUserInfo(event) {
     //Populate Info Box
     $('#userInfoName').text(thisUserObject.fullname);
     $('#userInfoAge').text(thisUserObject.age);
+    $('#userInfoMessage').text(thisUserObject.message);
+    $('#userInfoMaritalStatus').text(thisUserObject.maritalstatus);
     $('#userInfoGender').text(thisUserObject.gender);
     $('#userInfoLocation').text(thisUserObject.location);
 
@@ -86,6 +88,8 @@ function addUser(event) {
         'username': $('#addUser fieldset input#inputUserName').val(),
         'email': $('#addUser fieldset input#inputUserEmail').val(),
         'fullname': $('#addUser fieldset input#inputUserFullname').val(),
+        'message': $('#addUser fieldset input#inputUserMessage').val(),
+        'maritalstatus': $('#addUser fieldset input#inputUserMaritalStatus').val(),
         'age': $('#addUser fieldset input#inputUserAge').val(),
         'location': $('#addUser fieldset input#inputUserLocation').val(),
         'gender': $('#addUser fieldset input#inputUserGender').val()
